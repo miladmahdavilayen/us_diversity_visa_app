@@ -1,0 +1,10 @@
+chromedriver-py
+selenium
+pytesseract 
+pillow
+requests
+opencv-python
+scipy
+2captcha-python
+pyyaml
+openpyxl

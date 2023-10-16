@@ -1,0 +1,20 @@
+
+education:
+    "Primary school only",
+    "High School, no degree",
+    "High School degree",
+    "Vocational School",
+    "Some University Courses",
+    "University Degree",
+    "Some Graduate Level Courses",
+    "Master's Degree",
+    "Some Doctorate Level Courses",
+    "Doctorate Degree"
+
+marital_status:
+    "Unmarried",
+    "Married and my spouse is NOT a U.S. citizen or U.S. Lawful Permanent Resident (LPR)",
+    "Married and my spouse IS a U.S. citizen or U.S. Lawful Permanent Resident (LPR)",
+    "Divorced",
+    "Widowed",
+    "Legally Separated"
