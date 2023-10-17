@@ -1,3 +1,5 @@
 data/forms/archive/
 data/yaml_forms/archive/
 data/imgs/
+captcha.png
+__pycache__/
