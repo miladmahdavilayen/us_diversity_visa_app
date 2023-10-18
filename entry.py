@@ -243,7 +243,7 @@ def review_app(driver, person):
     print_options.page_ranges = ['1-3']
     base64code = driver.print_page(print_options)
     store_pdf(base64code, person, 'review_page')
-    countdown_timer(60)
+    countdown_timer(90)
     print('Review Page Printed and Saved!!')
     
     
