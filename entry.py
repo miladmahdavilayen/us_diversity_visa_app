@@ -13,6 +13,7 @@ from ocr import translate_captcha
 from headshot_resize import resize_image
 from build_yaml_old import build_yaml
 from whatsapp_yaml import build_whatsapp_yaml
+from time_countdown import countdown_timer
 
 
 
@@ -242,7 +243,7 @@ def review_app(driver, person):
     print_options.page_ranges = ['1-3']
     base64code = driver.print_page(print_options)
     store_pdf(base64code, person, 'review_page')
-    time.sleep(60)
+    countdown_timer(60)
     print('Review Page Printed and Saved!!')
     
     
@@ -280,7 +281,8 @@ def fill_kid_info(driver, person):
         country_born_dropdown = Select(driver.find_element(By.ID, "ContentPlaceHolder1_formChild01_qBirthCountry_drpBirthCountry"))
         country_born_dropdown.select_by_visible_text(person['country_born'])
         upload_kid_pic(driver, person)
-    
+
+ 
     
 import sys
 if __name__=="__main__":
