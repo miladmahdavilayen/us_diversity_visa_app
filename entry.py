@@ -249,14 +249,21 @@ def review_app(driver, person):
     
 def submit_application(driver, person):
     print("Submitting Application")
-    driver.find_element(By.ID, "ContentPlaceHolder1_btnContinueP2").click()
+    time.sleep(1)
+    submit_button = driver.find_element(By.ID, "ContentPlaceHolder1_btnContinueP2")
+    if submit_button:
+        submit_button.click()
+    else:
+        print('submit button not found')
+        time.sleep(2)
+        driver.quit()
     time.sleep(2)
     print_options = PrintOptions()
     print_options.page_ranges = ['1-2']
     base64code = driver.print_page(print_options)
     store_pdf(base64code, person, 'submit' )
     print("Submission Page Printed and Saved!!")
-    time.sleep(15)
+    time.sleep(3)
     driver.quit()
 
     
