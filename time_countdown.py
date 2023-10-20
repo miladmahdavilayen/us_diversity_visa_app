@@ -38,7 +38,7 @@ def countdown_timer(seconds):
     except KeyboardInterrupt:
         print("\nTimer stopped by user.")
         print("Skipping countdown...")
-        time.sleep(3)
+        time.sleep(1)
 
 if __name__ == "__main__":
-    countdown_timer(90)
+    countdown_timer(10)
