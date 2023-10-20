@@ -15,7 +15,6 @@ def countdown_timer(seconds):
     input_thread = threading.Thread(target=get_user_input)
     input_thread.daemon = True
     input_thread.start()
-    incorrect_responses = 0
 
     try:
         for i in range(seconds, -1, -1):
@@ -30,6 +29,8 @@ def countdown_timer(seconds):
             if skip:
                 print("\nSkipping Countdown...")
                 break
+            
+            time.sleep(1)
 
 
            
@@ -40,4 +41,4 @@ def countdown_timer(seconds):
         time.sleep(3)
 
 if __name__ == "__main__":
-    countdown_timer(15)
+    countdown_timer(90)
